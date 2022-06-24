@@ -1,6 +1,8 @@
 package book
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+)
 
 //Get all books
 func GetBooks(c *fiber.Ctx) error {

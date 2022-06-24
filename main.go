@@ -3,10 +3,8 @@ package main
 import (
 	"fmt"
 
-	//"mysql-books/book"
-	"github.com/SubratBarik/mysql-books/book"
-
 	"github.com/gofiber/fiber/v2"
+	"main.go/book"
 )
 
 func setupRoutes(app *fiber.App) {
@@ -22,10 +20,6 @@ func main() {
 	app := fiber.New()
 
 	setupRoutes(app)
-
-	// app.Get("/", func(c *fiber.Ctx) error {
-	// 	return c.SendString("Books Empire")
-	// })
 
 	app.Listen(":3000")
 }
