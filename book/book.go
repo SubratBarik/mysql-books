@@ -20,6 +20,6 @@ func NewBook(c *fiber.Ctx) error {
 }
 
 //Delete a specific book
-// func DeleteBook(c *fiber.Ctx) error {
-// 	return c.SendString("Delete Book")
-// }
+func DeleteBook(c *fiber.Ctx) error {
+	return c.SendString("Delete Book")
+}
